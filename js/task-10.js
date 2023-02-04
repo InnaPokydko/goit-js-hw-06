@@ -31,3 +31,29 @@ function destroyBoxes() {
 }
 
 
+// createBtn.addEventListener('click', createBoxes);
+// destroyBtn.addEventListener('click', destroyBoxes);
+
+// function createBoxes(amount) {
+//     const itemsList = [];
+    
+//     amount = Number(typeEl.value);
+//     itemsList.length = amount;
+
+//     itemsList.fill("").map((element, index) => {
+//         itemsList.forEach((item) => {
+//             element = document.createElement('div')
+//             element.style.width = 30 + index * 10 + 'px';
+//             element.style.height = 30 + index * 10 + 'px';
+//             element.style.backgroundColor = getRandomHexColor();
+//         })
+//         itemsList[index] = element;
+//     })
+//     randomBoxes.append(...itemsList);
+//     console.log(itemsList)
+// }
+
+// function destroyBoxes(amount) {
+//     randomBoxes.innerHTML = '';
+//     typeEl.value = '';
+// }
