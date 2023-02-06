@@ -15,13 +15,13 @@ const images = [
 
 const galleryList = document.querySelector(".gallery");
 const createGalleryItem = ({ url, alt }) =>
-  `<li><img src="${url}" alt="${alt}" width = 240></li>`;
+  `<li class="style"><img src="${url}" alt="${alt}" width = 240 class="img"></li>`;
 
     const galleryMarkup = images.reduce(
-    (acc, item) => acc + createGalleryItem(item), 0
+    (acc, item) => acc + createGalleryItem(item), " "
      );
 
 galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
-galleryList.classList.add("style");
+
 
 console.log(galleryList);
